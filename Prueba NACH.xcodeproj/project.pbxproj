@@ -14,6 +14,12 @@
 		D631BE89275ACB1B00E7F394 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631BE87275ACB1B00E7F394 /* MainTableViewController.swift */; };
 		D631BE8A275ACB1B00E7F394 /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D631BE88275ACB1B00E7F394 /* MainTableViewController.xib */; };
 		D631BE90275ACC2300E7F394 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631BE8F275ACC2300E7F394 /* Network.swift */; };
+		D6F3847E275AD8D40007408C /* UserNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3847C275AD8D40007408C /* UserNameCell.swift */; };
+		D6F3847F275AD8D40007408C /* UserNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F3847D275AD8D40007408C /* UserNameCell.xib */; };
+		D6F38487275AD9310007408C /* TakeSelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F38485275AD9310007408C /* TakeSelfieCell.swift */; };
+		D6F38488275AD9310007408C /* TakeSelfieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F38486275AD9310007408C /* TakeSelfieCell.xib */; };
+		D6F3848E275AD9790007408C /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3848C275AD9790007408C /* DescriptionCell.swift */; };
+		D6F3848F275AD9790007408C /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F3848D275AD9790007408C /* DescriptionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		D631BE87275ACB1B00E7F394 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		D631BE88275ACB1B00E7F394 /* MainTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewController.xib; sourceTree = "<group>"; };
 		D631BE8F275ACC2300E7F394 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		D6F3847C275AD8D40007408C /* UserNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameCell.swift; sourceTree = "<group>"; };
+		D6F3847D275AD8D40007408C /* UserNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNameCell.xib; sourceTree = "<group>"; };
+		D6F38485275AD9310007408C /* TakeSelfieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeSelfieCell.swift; sourceTree = "<group>"; };
+		D6F38486275AD9310007408C /* TakeSelfieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakeSelfieCell.xib; sourceTree = "<group>"; };
+		D6F3848C275AD9790007408C /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		D6F3848D275AD9790007408C /* DescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +84,7 @@
 		D631BE86275ACB0100E7F394 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D631BE92275ACC5800E7F394 /* Cells */,
+				D6F3847B275AD8BE0007408C /* Cells */,
 				D631BE87275ACB1B00E7F394 /* MainTableViewController.swift */,
 				D631BE88275ACB1B00E7F394 /* MainTableViewController.xib */,
 			);
@@ -87,19 +99,41 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		D631BE92275ACC5800E7F394 /* Cells */ = {
+		D6F3847B275AD8BE0007408C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D631BE93275ACC7200E7F394 /* UserName */,
+				D6F38482275AD90F0007408C /* UserName */,
+				D6F38484275AD91A0007408C /* TakeSelfie */,
+				D6F3848B275AD9650007408C /* Description */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		D631BE93275ACC7200E7F394 /* UserName */ = {
+		D6F38482275AD90F0007408C /* UserName */ = {
 			isa = PBXGroup;
 			children = (
+				D6F3847C275AD8D40007408C /* UserNameCell.swift */,
+				D6F3847D275AD8D40007408C /* UserNameCell.xib */,
 			);
 			path = UserName;
+			sourceTree = "<group>";
+		};
+		D6F38484275AD91A0007408C /* TakeSelfie */ = {
+			isa = PBXGroup;
+			children = (
+				D6F38485275AD9310007408C /* TakeSelfieCell.swift */,
+				D6F38486275AD9310007408C /* TakeSelfieCell.xib */,
+			);
+			path = TakeSelfie;
+			sourceTree = "<group>";
+		};
+		D6F3848B275AD9650007408C /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				D6F3848C275AD9790007408C /* DescriptionCell.swift */,
+				D6F3848D275AD9790007408C /* DescriptionCell.xib */,
+			);
+			path = Description;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +194,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D631BE8A275ACB1B00E7F394 /* MainTableViewController.xib in Resources */,
+				D6F38488275AD9310007408C /* TakeSelfieCell.xib in Resources */,
+				D6F3847F275AD8D40007408C /* UserNameCell.xib in Resources */,
 				D631BE7C275AC94600E7F394 /* LaunchScreen.storyboard in Resources */,
+				D6F3848F275AD9790007408C /* DescriptionCell.xib in Resources */,
 				D631BE79275AC94600E7F394 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,8 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D631BE89275ACB1B00E7F394 /* MainTableViewController.swift in Sources */,
+				D6F3848E275AD9790007408C /* DescriptionCell.swift in Sources */,
+				D6F3847E275AD8D40007408C /* UserNameCell.swift in Sources */,
 				D631BE70275AC94500E7F394 /* AppDelegate.swift in Sources */,
 				D631BE90275ACC2300E7F394 /* Network.swift in Sources */,
+				D6F38487275AD9310007408C /* TakeSelfieCell.swift in Sources */,
 				D631BE72275AC94500E7F394 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
