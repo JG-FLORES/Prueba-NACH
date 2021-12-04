@@ -30,6 +30,7 @@
 		D6F384B0275AF83A0007408C /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F384AF275AF83A0007408C /* UIViewController+extension.swift */; };
 		D6F384B3275AF8D40007408C /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F384B2275AF8D40007408C /* MainTableView.swift */; };
 		D6F384B8275B16A00007408C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6F384B7275B16A00007408C /* GoogleService-Info.plist */; };
+		D6F384D9275B20480007408C /* MainTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F384D8275B20480007408C /* MainTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		D6F384AF275AF83A0007408C /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		D6F384B2275AF8D40007408C /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
 		D6F384B7275B16A00007408C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D6F384D8275B20480007408C /* MainTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				D6F3847B275AD8BE0007408C /* Cells */,
 				D631BE87275ACB1B00E7F394 /* MainTableViewController.swift */,
 				D631BE88275ACB1B00E7F394 /* MainTableViewController.xib */,
+				D6F384D8275B20480007408C /* MainTable.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				D6F384B3275AF8D40007408C /* MainTableView.swift in Sources */,
 				D6F384A9275AF6B20007408C /* Overlay.swift in Sources */,
 				D6F38487275AD9310007408C /* TakeSelfieCell.swift in Sources */,
+				D6F384D9275B20480007408C /* MainTable.swift in Sources */,
 				D631BE72275AC94500E7F394 /* SceneDelegate.swift in Sources */,
 				D6F38496275ADC9B0007408C /* PopupViewController.swift in Sources */,
 			);
