@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		D6A76E89275B2425007E02A6 /* GraphTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A76E87275B2425007E02A6 /* GraphTableViewController.swift */; };
 		D6A76E8A275B2425007E02A6 /* GraphTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A76E88275B2425007E02A6 /* GraphTableViewController.xib */; };
 		D6A76E8D275B2486007E02A6 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A76E8C275B2486007E02A6 /* GraphViewController.swift */; };
+		D6A76E93275B3839007E02A6 /* Prueba-NACH.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D6A76E92275B3839007E02A6 /* Prueba-NACH.pdf */; };
 		D6F3847E275AD8D40007408C /* UserNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3847C275AD8D40007408C /* UserNameCell.swift */; };
 		D6F3847F275AD8D40007408C /* UserNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F3847D275AD8D40007408C /* UserNameCell.xib */; };
 		D6F38487275AD9310007408C /* TakeSelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F38485275AD9310007408C /* TakeSelfieCell.swift */; };
@@ -49,6 +50,7 @@
 		D6A76E87275B2425007E02A6 /* GraphTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTableViewController.swift; sourceTree = "<group>"; };
 		D6A76E88275B2425007E02A6 /* GraphTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphTableViewController.xib; sourceTree = "<group>"; };
 		D6A76E8C275B2486007E02A6 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		D6A76E92275B3839007E02A6 /* Prueba-NACH.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Prueba-NACH.pdf"; sourceTree = "<group>"; };
 		D6F3847C275AD8D40007408C /* UserNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameCell.swift; sourceTree = "<group>"; };
 		D6F3847D275AD8D40007408C /* UserNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNameCell.xib; sourceTree = "<group>"; };
 		D6F38485275AD9310007408C /* TakeSelfieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeSelfieCell.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		D631BE6E275AC94500E7F394 /* Prueba NACH */ = {
 			isa = PBXGroup;
 			children = (
+				D6A76E91275B3809007E02A6 /* Complemento */,
 				D631BE6F275AC94500E7F394 /* AppDelegate.swift */,
 				D631BE71275AC94500E7F394 /* SceneDelegate.swift */,
 				D6F384A6275AF69D0007408C /* Resources */,
@@ -146,6 +149,14 @@
 				D6A76E8C275B2486007E02A6 /* GraphViewController.swift */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		D6A76E91275B3809007E02A6 /* Complemento */ = {
+			isa = PBXGroup;
+			children = (
+				D6A76E92275B3839007E02A6 /* Prueba-NACH.pdf */,
+			);
+			path = Complemento;
 			sourceTree = "<group>";
 		};
 		D6F3847B275AD8BE0007408C /* Cells */ = {
@@ -308,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D631BE8A275ACB1B00E7F394 /* MainTableViewController.xib in Resources */,
+				D6A76E93275B3839007E02A6 /* Prueba-NACH.pdf in Resources */,
 				D6F38488275AD9310007408C /* TakeSelfieCell.xib in Resources */,
 				D6A76E8A275B2425007E02A6 /* GraphTableViewController.xib in Resources */,
 				D6F384B8275B16A00007408C /* GoogleService-Info.plist in Resources */,
