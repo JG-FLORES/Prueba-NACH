@@ -22,6 +22,8 @@
 		D6F3848F275AD9790007408C /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F3848D275AD9790007408C /* DescriptionCell.xib */; };
 		D6F38496275ADC9B0007408C /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F38494275ADC9B0007408C /* PopupViewController.swift */; };
 		D6F38497275ADC9B0007408C /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F38495275ADC9B0007408C /* PopupViewController.xib */; };
+		D6F3849D275AF2A90007408C /* DoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3849B275AF2A80007408C /* DoneCell.swift */; };
+		D6F3849E275AF2A90007408C /* DoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F3849C275AF2A90007408C /* DoneCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		D6F3848D275AD9790007408C /* DescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
 		D6F38494275ADC9B0007408C /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		D6F38495275ADC9B0007408C /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
+		D6F3849B275AF2A80007408C /* DoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneCell.swift; sourceTree = "<group>"; };
+		D6F3849C275AF2A90007408C /* DoneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 				D6F38482275AD90F0007408C /* UserName */,
 				D6F38484275AD91A0007408C /* TakeSelfie */,
 				D6F3848B275AD9650007408C /* Description */,
+				D6F3849A275AF25A0007408C /* Done */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -148,6 +153,15 @@
 				D6F38495275ADC9B0007408C /* PopupViewController.xib */,
 			);
 			path = PopUp;
+			sourceTree = "<group>";
+		};
+		D6F3849A275AF25A0007408C /* Done */ = {
+			isa = PBXGroup;
+			children = (
+				D6F3849B275AF2A80007408C /* DoneCell.swift */,
+				D6F3849C275AF2A90007408C /* DoneCell.xib */,
+			);
+			path = Done;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +224,7 @@
 				D631BE8A275ACB1B00E7F394 /* MainTableViewController.xib in Resources */,
 				D6F38488275AD9310007408C /* TakeSelfieCell.xib in Resources */,
 				D6F3847F275AD8D40007408C /* UserNameCell.xib in Resources */,
+				D6F3849E275AF2A90007408C /* DoneCell.xib in Resources */,
 				D6F38497275ADC9B0007408C /* PopupViewController.xib in Resources */,
 				D631BE7C275AC94600E7F394 /* LaunchScreen.storyboard in Resources */,
 				D6F3848F275AD9790007408C /* DescriptionCell.xib in Resources */,
@@ -227,6 +242,7 @@
 				D631BE89275ACB1B00E7F394 /* MainTableViewController.swift in Sources */,
 				D6F3848E275AD9790007408C /* DescriptionCell.swift in Sources */,
 				D6F3847E275AD8D40007408C /* UserNameCell.swift in Sources */,
+				D6F3849D275AF2A90007408C /* DoneCell.swift in Sources */,
 				D631BE70275AC94500E7F394 /* AppDelegate.swift in Sources */,
 				D631BE90275ACC2300E7F394 /* Network.swift in Sources */,
 				D6F38487275AD9310007408C /* TakeSelfieCell.swift in Sources */,

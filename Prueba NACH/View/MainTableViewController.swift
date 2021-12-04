@@ -13,7 +13,7 @@ class MainTableViewController: UITableViewController, imageSelectedProtocol {
     private let userNameCell = "userNameCell"
     private let takeSelfieCell = "takeSelfieCell"
     private let desciptionCell = "desciptionCell"
-        
+    private let doneCell = "doneCell"
     
 //    MARK: Var
     var popup: PopupViewController?
@@ -24,7 +24,7 @@ class MainTableViewController: UITableViewController, imageSelectedProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCell()
-        self.tableView.backgroundColor = .red
+        title = "Main"
     }
     
 //    MARK: Register cells
@@ -32,6 +32,7 @@ class MainTableViewController: UITableViewController, imageSelectedProtocol {
         tableView.register(UINib(nibName: "UserNameCell", bundle: nil), forCellReuseIdentifier: userNameCell)
         tableView.register(UINib(nibName: "TakeSelfieCell", bundle: nil), forCellReuseIdentifier: takeSelfieCell)
         tableView.register(UINib(nibName: "DescriptionCell", bundle: nil), forCellReuseIdentifier: desciptionCell)
+        tableView.register(UINib(nibName: "DoneCell", bundle: nil), forCellReuseIdentifier: doneCell)
     }
     
     func showPopup(){
@@ -54,22 +55,28 @@ extension MainTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "userNameCell", for: indexPath) as! UserNameCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: userNameCell, for: indexPath) as! UserNameCell
             cell.handlerString = { userName in
                 self.userName = userName
             }
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "takeSelfieCell", for: indexPath) as! TakeSelfieCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: takeSelfieCell, for: indexPath) as! TakeSelfieCell
             return cell
         case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "desciptionCell", for: indexPath) as! DescriptionCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: desciptionCell, for: indexPath) as! DescriptionCell
+            return cell
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: doneCell, for: indexPath) as! DoneCell
+            cell.handlerClickDone = {
+                print("Click Done")
+            }
             return cell
         default:
             return UITableViewCell()
@@ -79,6 +86,8 @@ extension MainTableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 2{
             return 400
+        } else if indexPath.row == 3 {
+            return 75
         }
         return 100
     }
