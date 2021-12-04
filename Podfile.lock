@@ -32,6 +32,7 @@ PODS:
     - GoogleUtilities/Environment
   - GTMSessionFetcher/Core (1.7.0)
   - leveldb-library (1.22.1)
+  - MTCircleChart (1.0.1)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -42,6 +43,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
+  - MTCircleChart
 
 SPEC REPOS:
   trunk:
@@ -54,6 +56,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - leveldb-library
+    - MTCircleChart
     - nanopb
     - PromisesObjC
 
@@ -67,9 +70,10 @@ SPEC CHECKSUMS:
   GoogleUtilities: 684ee790a24f73ebb2d1d966e9711c203f2a4237
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
+  MTCircleChart: 9a4741b499343860aa8d4111c50d3dcae5a8ff36
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: a9c430a030fabb97b5ea8aacf929af7da80ec673
+PODFILE CHECKSUM: b854100433155898617cea1b2563f297924dd5e6
 
 COCOAPODS: 1.10.1

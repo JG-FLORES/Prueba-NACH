@@ -10,6 +10,7 @@ import Firebase
 
 
 extension MainTableViewController: imageSelectedProtocol {
+    
     func imageSelected(image: Data) {
         imageUpload = image
     }
@@ -88,5 +89,13 @@ extension MainTableViewController: imageSelectedProtocol {
             alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
             self.present(alertController, animated: true, completion: nil)
         }
+    }
+    
+//    MARK: Navigate to Graph
+    func navigateToGraph(){
+        guard let result = searchResult else { return }
+        let graphController = GraphTableViewController()
+        graphController.searchResult = result
+        self.navigationController?.pushViewController(graphController, animated: true)
     }
 }

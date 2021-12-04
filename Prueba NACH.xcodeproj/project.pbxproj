@@ -14,6 +14,9 @@
 		D631BE89275ACB1B00E7F394 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631BE87275ACB1B00E7F394 /* MainTableViewController.swift */; };
 		D631BE8A275ACB1B00E7F394 /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D631BE88275ACB1B00E7F394 /* MainTableViewController.xib */; };
 		D631BE90275ACC2300E7F394 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631BE8F275ACC2300E7F394 /* Network.swift */; };
+		D6A76E89275B2425007E02A6 /* GraphTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A76E87275B2425007E02A6 /* GraphTableViewController.swift */; };
+		D6A76E8A275B2425007E02A6 /* GraphTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A76E88275B2425007E02A6 /* GraphTableViewController.xib */; };
+		D6A76E8D275B2486007E02A6 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A76E8C275B2486007E02A6 /* GraphViewController.swift */; };
 		D6F3847E275AD8D40007408C /* UserNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3847C275AD8D40007408C /* UserNameCell.swift */; };
 		D6F3847F275AD8D40007408C /* UserNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F3847D275AD8D40007408C /* UserNameCell.xib */; };
 		D6F38487275AD9310007408C /* TakeSelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F38485275AD9310007408C /* TakeSelfieCell.swift */; };
@@ -28,7 +31,7 @@
 		D6F384A9275AF6B20007408C /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F384A8275AF6B20007408C /* Overlay.swift */; };
 		D6F384AD275AF8010007408C /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F384AC275AF8010007408C /* UIView+extension.swift */; };
 		D6F384B0275AF83A0007408C /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F384AF275AF83A0007408C /* UIViewController+extension.swift */; };
-		D6F384B3275AF8D40007408C /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F384B2275AF8D40007408C /* MainTableView.swift */; };
+		D6F384B3275AF8D40007408C /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F384B2275AF8D40007408C /* TableView.swift */; };
 		D6F384B8275B16A00007408C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6F384B7275B16A00007408C /* GoogleService-Info.plist */; };
 		D6F384D9275B20480007408C /* MainTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F384D8275B20480007408C /* MainTable.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +46,9 @@
 		D631BE87275ACB1B00E7F394 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		D631BE88275ACB1B00E7F394 /* MainTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewController.xib; sourceTree = "<group>"; };
 		D631BE8F275ACC2300E7F394 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		D6A76E87275B2425007E02A6 /* GraphTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTableViewController.swift; sourceTree = "<group>"; };
+		D6A76E88275B2425007E02A6 /* GraphTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphTableViewController.xib; sourceTree = "<group>"; };
+		D6A76E8C275B2486007E02A6 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		D6F3847C275AD8D40007408C /* UserNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameCell.swift; sourceTree = "<group>"; };
 		D6F3847D275AD8D40007408C /* UserNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNameCell.xib; sourceTree = "<group>"; };
 		D6F38485275AD9310007408C /* TakeSelfieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeSelfieCell.swift; sourceTree = "<group>"; };
@@ -57,7 +63,7 @@
 		D6F384A8275AF6B20007408C /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
 		D6F384AC275AF8010007408C /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		D6F384AF275AF83A0007408C /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
-		D6F384B2275AF8D40007408C /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
+		D6F384B2275AF8D40007408C /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		D6F384B7275B16A00007408C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D6F384D8275B20480007408C /* MainTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +138,16 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		D6A76E85275B23F1007E02A6 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				D6A76E87275B2425007E02A6 /* GraphTableViewController.swift */,
+				D6A76E88275B2425007E02A6 /* GraphTableViewController.xib */,
+				D6A76E8C275B2486007E02A6 /* GraphViewController.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		D6F3847B275AD8BE0007408C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +181,7 @@
 		D6F3848B275AD9650007408C /* Description */ = {
 			isa = PBXGroup;
 			children = (
+				D6A76E85275B23F1007E02A6 /* Graph */,
 				D6F3848C275AD9790007408C /* DescriptionCell.swift */,
 				D6F3848D275AD9790007408C /* DescriptionCell.xib */,
 			);
@@ -203,7 +220,7 @@
 				D6F384C7275B17350007408C /* Firebase */,
 				D6F384AB275AF7EC0007408C /* Extension */,
 				D6F384A7275AF6A60007408C /* Overlay */,
-				D6F384B2275AF8D40007408C /* MainTableView.swift */,
+				D6F384B2275AF8D40007408C /* TableView.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -292,6 +309,7 @@
 			files = (
 				D631BE8A275ACB1B00E7F394 /* MainTableViewController.xib in Resources */,
 				D6F38488275AD9310007408C /* TakeSelfieCell.xib in Resources */,
+				D6A76E8A275B2425007E02A6 /* GraphTableViewController.xib in Resources */,
 				D6F384B8275B16A00007408C /* GoogleService-Info.plist in Resources */,
 				D6F3847F275AD8D40007408C /* UserNameCell.xib in Resources */,
 				D6F3849E275AF2A90007408C /* DoneCell.xib in Resources */,
@@ -311,6 +329,7 @@
 			files = (
 				D6F384B0275AF83A0007408C /* UIViewController+extension.swift in Sources */,
 				D631BE89275ACB1B00E7F394 /* MainTableViewController.swift in Sources */,
+				D6A76E89275B2425007E02A6 /* GraphTableViewController.swift in Sources */,
 				D6F3848E275AD9790007408C /* DescriptionCell.swift in Sources */,
 				D6F384A3275AF5A40007408C /* SearchResult.swift in Sources */,
 				D6F3847E275AD8D40007408C /* UserNameCell.swift in Sources */,
@@ -318,10 +337,11 @@
 				D631BE70275AC94500E7F394 /* AppDelegate.swift in Sources */,
 				D6F384AD275AF8010007408C /* UIView+extension.swift in Sources */,
 				D631BE90275ACC2300E7F394 /* Network.swift in Sources */,
-				D6F384B3275AF8D40007408C /* MainTableView.swift in Sources */,
+				D6F384B3275AF8D40007408C /* TableView.swift in Sources */,
 				D6F384A9275AF6B20007408C /* Overlay.swift in Sources */,
 				D6F38487275AD9310007408C /* TakeSelfieCell.swift in Sources */,
 				D6F384D9275B20480007408C /* MainTable.swift in Sources */,
+				D6A76E8D275B2486007E02A6 /* GraphViewController.swift in Sources */,
 				D631BE72275AC94500E7F394 /* SceneDelegate.swift in Sources */,
 				D6F38496275ADC9B0007408C /* PopupViewController.swift in Sources */,
 			);

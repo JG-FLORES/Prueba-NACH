@@ -8,5 +8,6 @@ target 'Prueba NACH' do
   # Pods for Prueba NACH
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
+  pod 'MTCircleChart'
 
 end

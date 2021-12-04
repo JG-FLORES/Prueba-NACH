@@ -56,7 +56,7 @@ extension MainTableViewController {
         case MainTableView.takeSelfieCell:
             let cell = tableView.dequeueReusableCell(withIdentifier: takeSelfieCell, for: indexPath) as! TakeSelfieCell
             return cell
-        case MainTableView.desciptionCell:
+        case MainTableView.descriptionCell:
             let cell = tableView.dequeueReusableCell(withIdentifier: desciptionCell, for: indexPath) as! DescriptionCell
             return cell
         case MainTableView.doneCell:
@@ -71,8 +71,8 @@ extension MainTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == MainTableView.desciptionCell{
-            return MainTableView.Heights.desciption
+        if indexPath.row == MainTableView.descriptionCell{
+            return MainTableView.Heights.description
         } else if indexPath.row == MainTableView.doneCell {
             return MainTableView.Heights.done
         }
@@ -84,6 +84,8 @@ extension MainTableViewController {
         switch indexPath.row {
         case MainTableView.takeSelfieCell:
             self.showPopup()
+        case MainTableView.descriptionCell:
+            self.navigateToGraph()
         default:
             break
         }
