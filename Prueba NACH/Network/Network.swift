@@ -19,9 +19,11 @@ class Network {
                 completion(nil, error)
                 return
             }
+        
+            guard let data = data else {
+                return completion(nil, nil)
+            }
             
-            guard let data = data else {return}
-            print(data)
             do{
                 let objects = try JSONDecoder().decode(T.self, from: data)
                 print(objects)

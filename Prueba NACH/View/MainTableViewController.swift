@@ -16,6 +16,7 @@ class MainTableViewController: UITableViewController, imageSelectedProtocol {
     private let doneCell = "doneCell"
     
 //    MARK: Var
+    var searchResult: SearchResult?
     var popup: PopupViewController?
     var userName: String?
     var imageUpload: Data?
@@ -23,8 +24,9 @@ class MainTableViewController: UITableViewController, imageSelectedProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Home"
         registerCell()
-        title = "Main"
+        fetchData()
     }
     
 //    MARK: Register cells
@@ -46,33 +48,51 @@ class MainTableViewController: UITableViewController, imageSelectedProtocol {
     func imageSelected(image: Data) {
         
     }
+    
+    func fetchData(){
+        self.showOverlay("Cargando...")
+        Network.shared.fetchGenericJSONData(urlString: "https://us-central1-bibliotecadecontenido.cloudfunctions.net/helloWorld") { (result: SearchResult?, error) in
+            if error != nil{
+                self.errorMessage(title: "¡Error!", message: "No se pudo obtener los datos del servicio.")
+            }
+            self.searchResult = result
+            DispatchQueue.main.async{
+                self.hideOverlay()
+            }
+        }
+    }
+    
+    func errorMessage(title: String, message: String){
+        DispatchQueue.main.async {
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
 }
 
 // MARK: - Table view data source
 extension MainTableViewController {
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return MainTableView.numberOfRows
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
-        case 0:
+        case MainTableView.userNameCell:
             let cell = tableView.dequeueReusableCell(withIdentifier: userNameCell, for: indexPath) as! UserNameCell
             cell.handlerString = { userName in
                 self.userName = userName
             }
             return cell
-        case 1:
+        case MainTableView.takeSelfieCell:
             let cell = tableView.dequeueReusableCell(withIdentifier: takeSelfieCell, for: indexPath) as! TakeSelfieCell
             return cell
-        case 2:
+        case MainTableView.desciptionCell:
             let cell = tableView.dequeueReusableCell(withIdentifier: desciptionCell, for: indexPath) as! DescriptionCell
             return cell
-        case 3:
+        case MainTableView.doneCell:
             let cell = tableView.dequeueReusableCell(withIdentifier: doneCell, for: indexPath) as! DoneCell
             cell.handlerClickDone = {
                 print("Click Done")
@@ -84,19 +104,19 @@ extension MainTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 2{
+        if indexPath.row == MainTableView.desciptionCell{
             return 400
-        } else if indexPath.row == 3 {
+        } else if indexPath.row == MainTableView.doneCell {
             return 75
         }
-        return 100
+        return MainTableView.Heights.default
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         view.endEditing(true)
         let row = indexPath.row
         switch row {
-        case 1:
+        case MainTableView.takeSelfieCell:
             self.showPopup()
         default:
             break
