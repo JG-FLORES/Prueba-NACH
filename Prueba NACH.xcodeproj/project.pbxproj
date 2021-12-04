@@ -14,6 +14,16 @@
 		D631BE89275ACB1B00E7F394 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631BE87275ACB1B00E7F394 /* MainTableViewController.swift */; };
 		D631BE8A275ACB1B00E7F394 /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D631BE88275ACB1B00E7F394 /* MainTableViewController.xib */; };
 		D631BE90275ACC2300E7F394 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631BE8F275ACC2300E7F394 /* Network.swift */; };
+		D698C5B8275BD61300D72C16 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = D698C5AE275BD61200D72C16 /* Home.png */; };
+		D698C5B9275BD61300D72C16 /* Done.png in Resources */ = {isa = PBXBuildFile; fileRef = D698C5AF275BD61200D72C16 /* Done.png */; };
+		D698C5BA275BD61300D72C16 /* Selfie.png in Resources */ = {isa = PBXBuildFile; fileRef = D698C5B0275BD61200D72C16 /* Selfie.png */; };
+		D698C5BB275BD61300D72C16 /* userName.png in Resources */ = {isa = PBXBuildFile; fileRef = D698C5B1275BD61200D72C16 /* userName.png */; };
+		D698C5BC275BD61300D72C16 /* Description.png in Resources */ = {isa = PBXBuildFile; fileRef = D698C5B2275BD61300D72C16 /* Description.png */; };
+		D698C5BD275BD61300D72C16 /* PDF.png in Resources */ = {isa = PBXBuildFile; fileRef = D698C5B3275BD61300D72C16 /* PDF.png */; };
+		D698C5BE275BD61300D72C16 /* Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = D698C5B4275BD61300D72C16 /* Graph.png */; };
+		D698C5BF275BD61300D72C16 /* NameUser.png in Resources */ = {isa = PBXBuildFile; fileRef = D698C5B5275BD61300D72C16 /* NameUser.png */; };
+		D698C5C0275BD61300D72C16 /* TakeSelfie.png in Resources */ = {isa = PBXBuildFile; fileRef = D698C5B6275BD61300D72C16 /* TakeSelfie.png */; };
+		D698C5C1275BD61300D72C16 /* Complement.png in Resources */ = {isa = PBXBuildFile; fileRef = D698C5B7275BD61300D72C16 /* Complement.png */; };
 		D6A76E89275B2425007E02A6 /* GraphTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A76E87275B2425007E02A6 /* GraphTableViewController.swift */; };
 		D6A76E8A275B2425007E02A6 /* GraphTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A76E88275B2425007E02A6 /* GraphTableViewController.xib */; };
 		D6A76E8D275B2486007E02A6 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A76E8C275B2486007E02A6 /* GraphViewController.swift */; };
@@ -51,6 +61,16 @@
 		D631BE87275ACB1B00E7F394 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		D631BE88275ACB1B00E7F394 /* MainTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewController.xib; sourceTree = "<group>"; };
 		D631BE8F275ACC2300E7F394 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		D698C5AE275BD61200D72C16 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		D698C5AF275BD61200D72C16 /* Done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Done.png; sourceTree = "<group>"; };
+		D698C5B0275BD61200D72C16 /* Selfie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Selfie.png; sourceTree = "<group>"; };
+		D698C5B1275BD61200D72C16 /* userName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userName.png; sourceTree = "<group>"; };
+		D698C5B2275BD61300D72C16 /* Description.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Description.png; sourceTree = "<group>"; };
+		D698C5B3275BD61300D72C16 /* PDF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PDF.png; sourceTree = "<group>"; };
+		D698C5B4275BD61300D72C16 /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graph.png; sourceTree = "<group>"; };
+		D698C5B5275BD61300D72C16 /* NameUser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NameUser.png; sourceTree = "<group>"; };
+		D698C5B6275BD61300D72C16 /* TakeSelfie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TakeSelfie.png; sourceTree = "<group>"; };
+		D698C5B7275BD61300D72C16 /* Complement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Complement.png; sourceTree = "<group>"; };
 		D6A76E87275B2425007E02A6 /* GraphTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTableViewController.swift; sourceTree = "<group>"; };
 		D6A76E88275B2425007E02A6 /* GraphTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphTableViewController.xib; sourceTree = "<group>"; };
 		D6A76E8C275B2486007E02A6 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +168,23 @@
 				D631BE8F275ACC2300E7F394 /* Network.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		D698C5AD275BD60600D72C16 /* Readme */ = {
+			isa = PBXGroup;
+			children = (
+				D698C5B7275BD61300D72C16 /* Complement.png */,
+				D698C5B2275BD61300D72C16 /* Description.png */,
+				D698C5AF275BD61200D72C16 /* Done.png */,
+				D698C5B4275BD61300D72C16 /* Graph.png */,
+				D698C5AE275BD61200D72C16 /* Home.png */,
+				D698C5B5275BD61300D72C16 /* NameUser.png */,
+				D698C5B3275BD61300D72C16 /* PDF.png */,
+				D698C5B0275BD61200D72C16 /* Selfie.png */,
+				D698C5B6275BD61300D72C16 /* TakeSelfie.png */,
+				D698C5B1275BD61200D72C16 /* userName.png */,
+			);
+			path = Readme;
 			sourceTree = "<group>";
 		};
 		D6A76E85275B23F1007E02A6 /* Graph */ = {
@@ -256,6 +293,7 @@
 		D6F384A6275AF69D0007408C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D698C5AD275BD60600D72C16 /* Readme */,
 				D6F384C7275B17350007408C /* Firebase */,
 				D6F384AB275AF7EC0007408C /* Extension */,
 				D6F384A7275AF6A60007408C /* Overlay */,
@@ -346,18 +384,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D698C5C0275BD61300D72C16 /* TakeSelfie.png in Resources */,
+				D698C5BD275BD61300D72C16 /* PDF.png in Resources */,
+				D698C5C1275BD61300D72C16 /* Complement.png in Resources */,
 				D631BE8A275ACB1B00E7F394 /* MainTableViewController.xib in Resources */,
 				D6A76E93275B3839007E02A6 /* Prueba-NACH.pdf in Resources */,
 				D6F38488275AD9310007408C /* TakeSelfieCell.xib in Resources */,
 				D6A76E99275B39C8007E02A6 /* PDFViewerViewController.xib in Resources */,
+				D698C5BF275BD61300D72C16 /* NameUser.png in Resources */,
+				D698C5BC275BD61300D72C16 /* Description.png in Resources */,
+				D698C5BE275BD61300D72C16 /* Graph.png in Resources */,
 				D6A76E8A275B2425007E02A6 /* GraphTableViewController.xib in Resources */,
+				D698C5BA275BD61300D72C16 /* Selfie.png in Resources */,
 				D6A76EB0275B3C07007E02A6 /* ComplementCell.xib in Resources */,
+				D698C5B8275BD61300D72C16 /* Home.png in Resources */,
 				D6F384B8275B16A00007408C /* GoogleService-Info.plist in Resources */,
 				D6F3847F275AD8D40007408C /* UserNameCell.xib in Resources */,
 				D6F3849E275AF2A90007408C /* DoneCell.xib in Resources */,
 				D6F38497275ADC9B0007408C /* PopupViewController.xib in Resources */,
 				D631BE7C275AC94600E7F394 /* LaunchScreen.storyboard in Resources */,
+				D698C5B9275BD61300D72C16 /* Done.png in Resources */,
 				D6F3848F275AD9790007408C /* DescriptionCell.xib in Resources */,
+				D698C5BB275BD61300D72C16 /* userName.png in Resources */,
 				D631BE79275AC94600E7F394 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
