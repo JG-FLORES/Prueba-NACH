@@ -22,14 +22,20 @@ class UserNameCell: UITableViewCell, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-        if (textField == self.tfUserName) {
+        if textField == self.tfUserName {
             let text = textField.text ?? ""
             self.handlerString?(text)
             let allowedCharacter = CharacterSet.letters
             let allowedCharacterWhiteSpaces = CharacterSet.whitespaces
             let characterSet = CharacterSet(charactersIn: string)
             return allowedCharacter.isSuperset(of: characterSet) || allowedCharacterWhiteSpaces.isSuperset(of: characterSet)
+        }
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == tfUserName {
+            self.endEditing(true)
         }
         return true
     }
