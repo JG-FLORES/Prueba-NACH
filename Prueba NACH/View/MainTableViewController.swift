@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MainTableViewController: UITableViewController, imageSelectedProtocol {
     
@@ -21,12 +22,12 @@ class MainTableViewController: UITableViewController, imageSelectedProtocol {
     var userName: String?
     var imageUpload: Data?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Home"
         registerCell()
         fetchData()
+        observeData()
     }
     
 //    MARK: Register cells
@@ -37,6 +38,7 @@ class MainTableViewController: UITableViewController, imageSelectedProtocol {
         tableView.register(UINib(nibName: "DoneCell", bundle: nil), forCellReuseIdentifier: doneCell)
     }
     
+//    MARK: Show popup
     func showPopup(){
         self.popup = PopupViewController()
         self.popup?.delegateImage =  self
@@ -46,9 +48,24 @@ class MainTableViewController: UITableViewController, imageSelectedProtocol {
     }
     
     func imageSelected(image: Data) {
-        
+        imageUpload = image
     }
     
+//    MARK: Observe Data Base Real Time
+    func observeData(){
+        Database.database().reference(withPath: "backgroundColor").observe(.value) { (snapshot) in
+            guard let value = snapshot.value as? [String: AnyObject] else { return }
+            guard let r = value["r"] as? Int, let g = value["g"] as? Int, let b = value["b"] as? Int else { return }
+            
+            let red = CGFloat(r)
+            let green = CGFloat(g)
+            let blue = CGFloat(b)
+            let color = UIColor.init(red: red/255, green: green/255, blue: blue/255, alpha: 1.0)
+            self.tableView.backgroundColor = color
+        }
+    }
+    
+//    MARK: Fetch Data
     func fetchData(){
         self.showOverlay("Cargando...")
         Network.shared.fetchGenericJSONData(urlString: "https://us-central1-bibliotecadecontenido.cloudfunctions.net/helloWorld") { (result: SearchResult?, error) in
@@ -105,17 +122,16 @@ extension MainTableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == MainTableView.desciptionCell{
-            return 400
+            return MainTableView.Heights.desciption
         } else if indexPath.row == MainTableView.doneCell {
-            return 75
+            return MainTableView.Heights.done
         }
         return MainTableView.Heights.default
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         view.endEditing(true)
-        let row = indexPath.row
-        switch row {
+        switch indexPath.row {
         case MainTableView.takeSelfieCell:
             self.showPopup()
         default:

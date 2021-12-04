@@ -15,7 +15,7 @@ public struct MainTableView{
     static let doneCell: Int = 3
     
     struct Heights {
-        static let desciption:CGFloat = 200
+        static let desciption:CGFloat = 400
         static let done:CGFloat = 75
         static let `default`:CGFloat = 100
     }
