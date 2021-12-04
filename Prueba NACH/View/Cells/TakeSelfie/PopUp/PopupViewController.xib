@@ -26,10 +26,11 @@
                     <color key="backgroundColor" systemColor="systemGrayColor"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKR-fk-QFZ">
-                    <rect key="frame" x="30" y="218" width="354" height="460"/>
+                    <rect key="frame" x="30" y="198" width="354" height="460"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5wQ-ST-f6w">
-                            <rect key="frame" x="42" y="30" width="260" height="260"/>
+                            <rect key="frame" x="42" y="30" width="270" height="260"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="260" id="IZW-et-wnf"/>
                             </constraints>
@@ -59,7 +60,7 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="5wQ-ST-f6w" secondAttribute="trailing" constant="52" id="NbM-2l-l5A"/>
+                        <constraint firstAttribute="trailing" secondItem="5wQ-ST-f6w" secondAttribute="trailing" constant="42" id="NbM-2l-l5A"/>
                         <constraint firstAttribute="bottom" secondItem="f8t-D7-1cr" secondAttribute="bottom" id="O8n-lo-wgO"/>
                         <constraint firstItem="5wQ-ST-f6w" firstAttribute="top" secondItem="fKR-fk-QFZ" secondAttribute="top" constant="30" id="P7g-4k-oFW"/>
                         <constraint firstAttribute="trailing" secondItem="gqx-pF-ank" secondAttribute="trailing" id="a6g-1L-L8G"/>
@@ -76,7 +77,7 @@
                 <constraint firstItem="fKR-fk-QFZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="6t4-5u-3Pi"/>
                 <constraint firstItem="7Vp-Dm-DCk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="782-40-bcF"/>
                 <constraint firstAttribute="bottom" secondItem="7Vp-Dm-DCk" secondAttribute="bottom" id="9N8-ff-eV8"/>
-                <constraint firstItem="fKR-fk-QFZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="DYu-WK-WWM"/>
+                <constraint firstItem="fKR-fk-QFZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-20" id="DYu-WK-WWM"/>
                 <constraint firstItem="7Vp-Dm-DCk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JjB-UL-YPE"/>
                 <constraint firstItem="fKR-fk-QFZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gzK-yD-11L"/>
                 <constraint firstItem="7Vp-Dm-DCk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="m6b-19-8xw"/>

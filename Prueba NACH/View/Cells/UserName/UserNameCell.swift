@@ -9,6 +9,7 @@ import UIKit
 
 class UserNameCell: UITableViewCell, UITextFieldDelegate {
     
+//    MARK: Var
     var handlerString: ((String)->())?
     @IBOutlet weak var tfUserName: UITextField!
     
@@ -21,8 +22,9 @@ class UserNameCell: UITableViewCell, UITextFieldDelegate {
         super.setSelected(selected, animated: animated)
     }
     
+//    MARK: Validate text format
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if textField == self.tfUserName {
+        if textField == tfUserName {
             let text = textField.text ?? ""
             self.handlerString?(text)
             let allowedCharacter = CharacterSet.letters
@@ -33,6 +35,7 @@ class UserNameCell: UITableViewCell, UITextFieldDelegate {
         return true
     }
     
+//    MARK: Hide Keyboard
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == tfUserName {
             self.endEditing(true)

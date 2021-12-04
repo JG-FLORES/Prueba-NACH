@@ -12,8 +12,9 @@ class MainTableViewController: UITableViewController {
 //    MARK: ReuseIdentifier
     private let userNameCell = "userNameCell"
     private let takeSelfieCell = "takeSelfieCell"
-    private let desciptionCell = "desciptionCell"
+    private let descriptionCell = "descriptionCell"
     private let doneCell = "doneCell"
+    private let complementCell = "complementCell"
     
 //    MARK: Var
     var searchResult: SearchResult?
@@ -33,8 +34,9 @@ class MainTableViewController: UITableViewController {
     func registerCell(){
         tableView.register(UINib(nibName: "UserNameCell", bundle: nil), forCellReuseIdentifier: userNameCell)
         tableView.register(UINib(nibName: "TakeSelfieCell", bundle: nil), forCellReuseIdentifier: takeSelfieCell)
-        tableView.register(UINib(nibName: "DescriptionCell", bundle: nil), forCellReuseIdentifier: desciptionCell)
+        tableView.register(UINib(nibName: "DescriptionCell", bundle: nil), forCellReuseIdentifier: descriptionCell)
         tableView.register(UINib(nibName: "DoneCell", bundle: nil), forCellReuseIdentifier: doneCell)
+        tableView.register(UINib(nibName: "ComplementCell", bundle: nil), forCellReuseIdentifier: complementCell)
     }   
 }
 
@@ -57,12 +59,18 @@ extension MainTableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: takeSelfieCell, for: indexPath) as! TakeSelfieCell
             return cell
         case MainTableView.descriptionCell:
-            let cell = tableView.dequeueReusableCell(withIdentifier: desciptionCell, for: indexPath) as! DescriptionCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: descriptionCell, for: indexPath) as! DescriptionCell
             return cell
         case MainTableView.doneCell:
             let cell = tableView.dequeueReusableCell(withIdentifier: doneCell, for: indexPath) as! DoneCell
             cell.handlerClickDone = {
                 self.uploadImage()
+            }
+            return cell
+        case MainTableView.complementCell:
+            let cell = tableView.dequeueReusableCell(withIdentifier: complementCell, for: indexPath) as! ComplementCell
+            cell.handlerClick = {
+                self.navigateToPDFViewer()
             }
             return cell
         default:

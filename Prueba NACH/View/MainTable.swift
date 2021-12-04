@@ -19,6 +19,7 @@ extension MainTableViewController: imageSelectedProtocol {
     func showPopup(){
         self.popup = PopupViewController()
         self.popup?.delegateImage =  self
+        self.popup?.modalPresentationStyle = .fullScreen
         self.popup?.view.frame = self.tableView.frame
         self.view.addSubview((self.popup?.view)!)
         self.addChild(self.popup!)
@@ -97,5 +98,11 @@ extension MainTableViewController: imageSelectedProtocol {
         let graphController = GraphTableViewController()
         graphController.searchResult = result
         self.navigationController?.pushViewController(graphController, animated: true)
+    }
+    
+//    MARK: Navigate to PDF Viewer
+    func navigateToPDFViewer(){
+        let pdfViewer = PDFViewerViewController()
+        self.navigationController?.pushViewController(pdfViewer, animated: true)
     }
 }

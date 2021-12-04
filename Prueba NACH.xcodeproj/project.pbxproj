@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,10 @@
 		D6A76E8A275B2425007E02A6 /* GraphTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A76E88275B2425007E02A6 /* GraphTableViewController.xib */; };
 		D6A76E8D275B2486007E02A6 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A76E8C275B2486007E02A6 /* GraphViewController.swift */; };
 		D6A76E93275B3839007E02A6 /* Prueba-NACH.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D6A76E92275B3839007E02A6 /* Prueba-NACH.pdf */; };
+		D6A76E98275B39C8007E02A6 /* PDFViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A76E96275B39C8007E02A6 /* PDFViewerViewController.swift */; };
+		D6A76E99275B39C8007E02A6 /* PDFViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A76E97275B39C8007E02A6 /* PDFViewerViewController.xib */; };
+		D6A76EAF275B3C07007E02A6 /* ComplementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A76EAD275B3C07007E02A6 /* ComplementCell.swift */; };
+		D6A76EB0275B3C07007E02A6 /* ComplementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A76EAE275B3C07007E02A6 /* ComplementCell.xib */; };
 		D6F3847E275AD8D40007408C /* UserNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3847C275AD8D40007408C /* UserNameCell.swift */; };
 		D6F3847F275AD8D40007408C /* UserNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F3847D275AD8D40007408C /* UserNameCell.xib */; };
 		D6F38487275AD9310007408C /* TakeSelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F38485275AD9310007408C /* TakeSelfieCell.swift */; };
@@ -51,6 +55,10 @@
 		D6A76E88275B2425007E02A6 /* GraphTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphTableViewController.xib; sourceTree = "<group>"; };
 		D6A76E8C275B2486007E02A6 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		D6A76E92275B3839007E02A6 /* Prueba-NACH.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Prueba-NACH.pdf"; sourceTree = "<group>"; };
+		D6A76E96275B39C8007E02A6 /* PDFViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewerViewController.swift; sourceTree = "<group>"; };
+		D6A76E97275B39C8007E02A6 /* PDFViewerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFViewerViewController.xib; sourceTree = "<group>"; };
+		D6A76EAD275B3C07007E02A6 /* ComplementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplementCell.swift; sourceTree = "<group>"; };
+		D6A76EAE275B3C07007E02A6 /* ComplementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComplementCell.xib; sourceTree = "<group>"; };
 		D6F3847C275AD8D40007408C /* UserNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameCell.swift; sourceTree = "<group>"; };
 		D6F3847D275AD8D40007408C /* UserNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNameCell.xib; sourceTree = "<group>"; };
 		D6F38485275AD9310007408C /* TakeSelfieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeSelfieCell.swift; sourceTree = "<group>"; };
@@ -108,9 +116,9 @@
 		D631BE6E275AC94500E7F394 /* Prueba NACH */ = {
 			isa = PBXGroup;
 			children = (
-				D6A76E91275B3809007E02A6 /* Complemento */,
 				D631BE6F275AC94500E7F394 /* AppDelegate.swift */,
 				D631BE71275AC94500E7F394 /* SceneDelegate.swift */,
+				D6A76E91275B3809007E02A6 /* Complement */,
 				D6F384A6275AF69D0007408C /* Resources */,
 				D631BE8E275ACC1100E7F394 /* Network */,
 				D6F384A1275AF58C0007408C /* Model */,
@@ -125,6 +133,7 @@
 		D631BE86275ACB0100E7F394 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D6A76E95275B39AA007E02A6 /* PDFViewer */,
 				D6F3847B275AD8BE0007408C /* Cells */,
 				D631BE87275ACB1B00E7F394 /* MainTableViewController.swift */,
 				D631BE88275ACB1B00E7F394 /* MainTableViewController.xib */,
@@ -151,12 +160,30 @@
 			path = Graph;
 			sourceTree = "<group>";
 		};
-		D6A76E91275B3809007E02A6 /* Complemento */ = {
+		D6A76E91275B3809007E02A6 /* Complement */ = {
 			isa = PBXGroup;
 			children = (
 				D6A76E92275B3839007E02A6 /* Prueba-NACH.pdf */,
 			);
-			path = Complemento;
+			path = Complement;
+			sourceTree = "<group>";
+		};
+		D6A76E95275B39AA007E02A6 /* PDFViewer */ = {
+			isa = PBXGroup;
+			children = (
+				D6A76E96275B39C8007E02A6 /* PDFViewerViewController.swift */,
+				D6A76E97275B39C8007E02A6 /* PDFViewerViewController.xib */,
+			);
+			path = PDFViewer;
+			sourceTree = "<group>";
+		};
+		D6A76EAB275B3BDA007E02A6 /* Complement */ = {
+			isa = PBXGroup;
+			children = (
+				D6A76EAD275B3C07007E02A6 /* ComplementCell.swift */,
+				D6A76EAE275B3C07007E02A6 /* ComplementCell.xib */,
+			);
+			path = Complement;
 			sourceTree = "<group>";
 		};
 		D6F3847B275AD8BE0007408C /* Cells */ = {
@@ -166,6 +193,7 @@
 				D6F38484275AD91A0007408C /* TakeSelfie */,
 				D6F3848B275AD9650007408C /* Description */,
 				D6F3849A275AF25A0007408C /* Done */,
+				D6A76EAB275B3BDA007E02A6 /* Complement */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -321,7 +349,9 @@
 				D631BE8A275ACB1B00E7F394 /* MainTableViewController.xib in Resources */,
 				D6A76E93275B3839007E02A6 /* Prueba-NACH.pdf in Resources */,
 				D6F38488275AD9310007408C /* TakeSelfieCell.xib in Resources */,
+				D6A76E99275B39C8007E02A6 /* PDFViewerViewController.xib in Resources */,
 				D6A76E8A275B2425007E02A6 /* GraphTableViewController.xib in Resources */,
+				D6A76EB0275B3C07007E02A6 /* ComplementCell.xib in Resources */,
 				D6F384B8275B16A00007408C /* GoogleService-Info.plist in Resources */,
 				D6F3847F275AD8D40007408C /* UserNameCell.xib in Resources */,
 				D6F3849E275AF2A90007408C /* DoneCell.xib in Resources */,
@@ -343,11 +373,13 @@
 				D631BE89275ACB1B00E7F394 /* MainTableViewController.swift in Sources */,
 				D6A76E89275B2425007E02A6 /* GraphTableViewController.swift in Sources */,
 				D6F3848E275AD9790007408C /* DescriptionCell.swift in Sources */,
+				D6A76EAF275B3C07007E02A6 /* ComplementCell.swift in Sources */,
 				D6F384A3275AF5A40007408C /* SearchResult.swift in Sources */,
 				D6F3847E275AD8D40007408C /* UserNameCell.swift in Sources */,
 				D6F3849D275AF2A90007408C /* DoneCell.swift in Sources */,
 				D631BE70275AC94500E7F394 /* AppDelegate.swift in Sources */,
 				D6F384AD275AF8010007408C /* UIView+extension.swift in Sources */,
+				D6A76E98275B39C8007E02A6 /* PDFViewerViewController.swift in Sources */,
 				D631BE90275ACC2300E7F394 /* Network.swift in Sources */,
 				D6F384B3275AF8D40007408C /* TableView.swift in Sources */,
 				D6F384A9275AF6B20007408C /* Overlay.swift in Sources */,

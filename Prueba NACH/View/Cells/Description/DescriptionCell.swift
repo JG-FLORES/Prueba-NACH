@@ -9,6 +9,7 @@ import UIKit
 
 class DescriptionCell: UITableViewCell {
     
+//    MARK: Var
     @IBOutlet weak var lblDescription: UILabel!
 
     override func awakeFromNib() {

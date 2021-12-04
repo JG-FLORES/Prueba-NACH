@@ -28,6 +28,7 @@ class PopupViewController: UIViewController {
         setupView()
     }
     
+//    MARK: Setup Views
     func setupView(){
         viewContainerElements.layer.cornerRadius = 13
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewAllContainerTapped))
@@ -38,7 +39,6 @@ class PopupViewController: UIViewController {
         self.view.removeFromSuperview()
         self.removeFromParent()
     }
-    
     
     @IBAction func openCamera(_ sender: Any) {
         checkCameraPermission()

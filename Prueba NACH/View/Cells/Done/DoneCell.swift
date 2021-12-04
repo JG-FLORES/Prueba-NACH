@@ -9,6 +9,7 @@ import UIKit
 
 class DoneCell: UITableViewCell {
     
+//    MARK: Var
     @IBOutlet weak var btnDone: UIButton!
     var handlerClickDone: (()->())?
 
