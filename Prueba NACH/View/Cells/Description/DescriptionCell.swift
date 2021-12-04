@@ -10,7 +10,6 @@ import UIKit
 class DescriptionCell: UITableViewCell {
     
     @IBOutlet weak var lblDescription: UILabel!
-    var handlerSelected: (()->())?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,7 +18,6 @@ class DescriptionCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        handlerSelected?()
     }
     
 }

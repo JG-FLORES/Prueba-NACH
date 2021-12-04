@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainTableViewController: UITableViewController {
+class MainTableViewController: UITableViewController, imageSelectedProtocol {
     
 //    MARK: ReuseIdentifier
     private let userNameCell = "userNameCell"
@@ -16,18 +16,34 @@ class MainTableViewController: UITableViewController {
         
     
 //    MARK: Var
+    var popup: PopupViewController?
     var userName: String?
+    var imageUpload: Data?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCell()
+        self.tableView.backgroundColor = .red
     }
     
+//    MARK: Register cells
     func registerCell(){
         tableView.register(UINib(nibName: "UserNameCell", bundle: nil), forCellReuseIdentifier: userNameCell)
         tableView.register(UINib(nibName: "TakeSelfieCell", bundle: nil), forCellReuseIdentifier: takeSelfieCell)
         tableView.register(UINib(nibName: "DescriptionCell", bundle: nil), forCellReuseIdentifier: desciptionCell)
+    }
+    
+    func showPopup(){
+        self.popup = PopupViewController()
+        self.popup?.delegateImage =  self
+        self.popup?.view.frame = self.tableView.frame
+        self.view.addSubview((self.popup?.view)!)
+        self.addChild(self.popup!)
+    }
+    
+    func imageSelected(image: Data) {
+        
     }
 }
 
@@ -51,15 +67,9 @@ extension MainTableViewController {
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "takeSelfieCell", for: indexPath) as! TakeSelfieCell
-            cell.handlerSelected = {
-                print("selected")
-            }
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "desciptionCell", for: indexPath) as! DescriptionCell
-            cell.handlerSelected = {
-                print("selected")
-            }
             return cell
         default:
             return UITableViewCell()
@@ -71,5 +81,16 @@ extension MainTableViewController {
             return 400
         }
         return 100
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        view.endEditing(true)
+        let row = indexPath.row
+        switch row {
+        case 1:
+            self.showPopup()
+        default:
+            break
+        }
     }
 }

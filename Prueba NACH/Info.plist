@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Se solicita permiso para activar la Cámara y así poder subir fotografía de usuario.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Se solicita permiso para acceder a la galería y así poder subir fotografía de usuario.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -9,14 +9,11 @@ import UIKit
 
 class TakeSelfieCell: UITableViewCell {
     
-    var handlerSelected: (()->())?
-
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        handlerSelected?()
     }
 }

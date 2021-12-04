@@ -20,6 +20,8 @@
 		D6F38488275AD9310007408C /* TakeSelfieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F38486275AD9310007408C /* TakeSelfieCell.xib */; };
 		D6F3848E275AD9790007408C /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3848C275AD9790007408C /* DescriptionCell.swift */; };
 		D6F3848F275AD9790007408C /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F3848D275AD9790007408C /* DescriptionCell.xib */; };
+		D6F38496275ADC9B0007408C /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F38494275ADC9B0007408C /* PopupViewController.swift */; };
+		D6F38497275ADC9B0007408C /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F38495275ADC9B0007408C /* PopupViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		D6F38486275AD9310007408C /* TakeSelfieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakeSelfieCell.xib; sourceTree = "<group>"; };
 		D6F3848C275AD9790007408C /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
 		D6F3848D275AD9790007408C /* DescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
+		D6F38494275ADC9B0007408C /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		D6F38495275ADC9B0007408C /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		D6F38484275AD91A0007408C /* TakeSelfie */ = {
 			isa = PBXGroup;
 			children = (
+				D6F38493275ADC810007408C /* PopUp */,
 				D6F38485275AD9310007408C /* TakeSelfieCell.swift */,
 				D6F38486275AD9310007408C /* TakeSelfieCell.xib */,
 			);
@@ -134,6 +139,15 @@
 				D6F3848D275AD9790007408C /* DescriptionCell.xib */,
 			);
 			path = Description;
+			sourceTree = "<group>";
+		};
+		D6F38493275ADC810007408C /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				D6F38494275ADC9B0007408C /* PopupViewController.swift */,
+				D6F38495275ADC9B0007408C /* PopupViewController.xib */,
+			);
+			path = PopUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +210,7 @@
 				D631BE8A275ACB1B00E7F394 /* MainTableViewController.xib in Resources */,
 				D6F38488275AD9310007408C /* TakeSelfieCell.xib in Resources */,
 				D6F3847F275AD8D40007408C /* UserNameCell.xib in Resources */,
+				D6F38497275ADC9B0007408C /* PopupViewController.xib in Resources */,
 				D631BE7C275AC94600E7F394 /* LaunchScreen.storyboard in Resources */,
 				D6F3848F275AD9790007408C /* DescriptionCell.xib in Resources */,
 				D631BE79275AC94600E7F394 /* Assets.xcassets in Resources */,
@@ -216,6 +231,7 @@
 				D631BE90275ACC2300E7F394 /* Network.swift in Sources */,
 				D6F38487275AD9310007408C /* TakeSelfieCell.swift in Sources */,
 				D631BE72275AC94500E7F394 /* SceneDelegate.swift in Sources */,
+				D6F38496275ADC9B0007408C /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
